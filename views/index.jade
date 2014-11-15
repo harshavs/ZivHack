@@ -1,0 +1,41 @@
+extends layout.jade
+
+block content
+    nav.navbar.navbar-inverse.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='#') ZivHack Shoes
+        #navbar.navbar-collapse.collapse
+          form.navbar-form.navbar-right(role='form')
+            button.btn.btn-success(type='submit') Go to Cart
+    
+    .jumbotron
+          ul.nav.nav-pills.nav-justified
+             li.active(role='presentation')
+               a(href='/') Home
+              
+             li.active(role='presentation')
+               a(href='/?category=Sports') Sports
+             li.active(role='presentation')
+               a(href='/?category=Casual') Casuals
+             li.active(role='presentation')
+               a(href='/?category=Formals') Formals  
+     .container
+      .row
+        for product,index in products 
+         .col-md-4.col-sm-6
+           .thumbnail
+             .caption
+               img(src='#{product.image}')
+               h3 #{product.description}
+               p
+                 a.btn.btn-default(href='#', role='button') View details &raquo;
+        
+      hr
+      footer
+        p &copy; ZivHack Shoes 2014

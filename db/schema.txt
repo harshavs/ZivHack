@@ -1,0 +1,23 @@
+{ 
+	"_id" : "5467afc93021ea60472f6d65",
+	"description" : "Casual Shoes -Y", 
+	"category" : [ "Casual", "Men", "Office", "Fibre" ], 
+	"price" : 599, 
+	"special_price" : 349,
+	"sizes" : [ { "size_type" : "XL",
+		       "colors" : [ { "color" : "#3322FF",
+			              "stock" : 3 }, 
+						       
+ 				    { "color" : "#990340", 
+                                      "stock" : 6 } ] 
+		    },
+
+                    { "size_type" : "L",
+                      "colors" : [ { "color" : "#3450FF", 
+                                      "stock" : 1 }]                                                    
+                    }],
+
+        "image" : "http://static.yepme.com//Campaign/43358_small.jpg", 
+        "other_images" : [ "http://static.yepme.com//Campaign/43358_1.jpg","http://n2.sdlcdn.com/imgs/a/m/h/Reebok-Navy-Sport-Shoes-SDL437905561-2-41059.JPG" ] 
+}
+
